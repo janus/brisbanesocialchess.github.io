@@ -1,10 +1,24 @@
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/61562340?s=400&v=4" alt="Brisbane Social Chess Logo" style="border-radius: 50%;">
-  <h1>♟️ brisbanesocialchess.github.io</h1>
+  <h1>brisbanesocialchess.github.io</h1>
   <p>Welcome to the source code repository for the Brisbane Social Chess website.</p>
 </div>
 
 ---
+
+## About the Site Generator
+
+This website is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and flexible static site generator for JavaScript projects. Eleventy takes your content and templates and generates a fast, static website. You do not need to know advanced JavaScript to get started—just follow the steps below!
+
+[![CodeQL Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fcodeql.yml?label=codeql)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/codeql.yml)
+[![Dprint Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fdprint.yml?label=dprint)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/dprint.yml)
+[![First Interaction Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Ffirst-interaction.yml?label=first-interaction)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/first-interaction.yml)
+[![Git Clone Matrix Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fgit-clone-matrix.yml?label=git-clone-matrix)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/git-clone-matrix.yml)
+[![Labeler Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Flabeler.yml?label=labeler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/labeler.yml)
+[![Lerna Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Flerna.yml?label=lerna)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/lerna.yml)
+[![Ls-lint Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fls-lint.yml?label=ls-lint)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/ls-lint.yml)
+[![Pre-commit Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fpre-commit.yml?label=pre-commit)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/pre-commit.yml)
+[![Wrangler Workflow Status](https://img.shields.io/github/actions/workflow/status/brisbanesocialchess/brisbanesocialchess.github.io/.github%2Fworkflows%2Fwrangler.yml?label=wrangler)](https://github.com/brisbanesocialchess/brisbanesocialchess.github.io/actions/workflows/wrangler.yml)
 
 ## ℹ️ About the Site Generator
 
@@ -52,16 +66,16 @@ This site is built using [Eleventy (11ty)](https://www.11ty.dev/), a modern and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [📃 About Brisbane Social Chess](#-about-brisbane-social-chess)
-- [🚀 Quick Start](#-quick-start)
-- [🛠️ Technology Stack](#-technology-stack)
-  - [⚡ Cloudflare Workers Development](#-cloudflare-workers-development)
-    - [▶️ Start Development Server](#-start-development-server)
-    - [🏃 Run Tests](#-run-tests)
-  - [🏗️ Getting Started / Building the Site](#-getting-started--building-the-site)
-  - [🐳 Build the Docker image for running `pre-commit` easily](#-build-the-docker-image-for-running-pre-commit-easily)
-  - [📚 Build the Documentation](#-build-the-documentation)
-- [👥 Contributors](#-contributors)
+- [About Brisbane Social Chess](#about-brisbane-social-chess)
+- [Quick Start](#quick-start)
+- [Technology Stack](#technology-stack)
+  - [Cloudflare Workers Development](#cloudflare-workers-development)
+    - [Start Development Server](#start-development-server)
+    - [Run Tests](#run-tests)
+  - [Getting Started / Building the Site](#getting-started--building-the-site)
+  - [Build the Docker image for running `pre-commit` easily](#build-the-docker-image-for-running-pre-commit-easily)
+  - [Build the Documentation](#build-the-documentation)
+- [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -80,6 +94,22 @@ We are registered in Queensland and have a dedicated team of organizers.
 For detailed development setup instructions, see [DEVELOPER_HELP.md](DEVELOPER_HELP.md).
 
 Experiment with Lerna and bootup a local developer playground from the repository root with: `npx lerna run dev`.
+
+## Technology Stack
+
+[GitHub Pages](https://pages.github.com/) is a static site hosting service offered by GitHub, enabling users to host websites directly from their GitHub repositories. It is designed for publishing static content, meaning it primarily handles HTML, CSS, and JavaScript files, and does not support server-side languages like PHP or Python for dynamic content generation.
+
+[Read the Docs](https://about.readthedocs.com/) is a Continuous Documentation Deployment platform designed to simplify the process of building, versioning, and hosting technical documentation, particularly for software projects. It operates on the principle of "docs as code," integrating with version control systems like Git (GitHub, GitLab, Bitbucket) to automatically build and update documentation whenever changes are committed to the repository.
+
+[Cloudflare](https://www.cloudflare.com/en-au/) is a connectivity cloud that provides a range of services to improve the security, performance, and reliability of websites and applications. It acts as a Content Delivery Network (CDN), reverse proxy, and provides cybersecurity solutions. In essence, Cloudflare helps businesses connect, protect, and build their online presence.
+
+[Cloudflare Workers](https://developers.cloudflare.com/workers/) is a serverless platform for building, deploying, and scaling apps across Cloudflare's global network `↗` with a single command — no infrastructure to manage, no complex configuration.
+
+[Cloudflare Wrangler](https://developers.cloudflare.com/workers/wrangler/) is a command-line tool designed to help developers build and manage applications on the Cloudflare developer platform, particularly for Cloudflare Workers. It streamlines the process of deploying, testing, and configuring Workers, as well as interacting with other Cloudflare developer products.
+
+[Cloudflare D1](https://www.cloudflare.com/en-au/developer-platform/products/d1/) is a serverless relational database in seconds with D1. With a familiar SQL query language, point-in-time recovery, and cost-effective pricing, you are empowered to build the next big thing.
+
+[Lerna](https://lerna.js.org/) is a fast, modern build system for managing and publishing multiple JavaScript/TypeScript packages from the same repository.
 
 ## 🛠️ Technology Stack
 
